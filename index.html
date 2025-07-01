@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আমার অ্যাপ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌟 আমার অ্যাপ</h1>
+    <nav>
+      <a href="#" onclick="navigate('home')">হোম</a>
+      <a href="#" onclick="navigate('about')">আমাদের সম্পর্কে</a>
+      <a href="#" onclick="navigate('contact')">যোগাযোগ</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <h2>স্বাগতম!</h2>
+    <p>এটা হলো ওয়েবসাইটের মতো অ্যাপের একটি ডেমো।</p>
+  </main>
+
+  <footer>
+    <p>© ২০২৫ আমার অ্যাপ</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
